@@ -6,8 +6,8 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@master
       - name: Install
         uses: npm ci
       - name: Tests

@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: sschmidt0/LC-testing/actions/checkout@master
+        uses: sschmidt0/LC-testing/.github/workflows/ci.yml@master
       - name: Install
         uses: npm ci
       - name: Tests

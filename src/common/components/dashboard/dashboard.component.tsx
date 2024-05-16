@@ -16,16 +16,18 @@ interface Props {
   dataTestId?: string;
 }
 
-export const DashboardComponent: React.FC<Props> = props => {
+export const DashboardComponent: React.FC<Props> = (props) => {
   const { items, classes, dataTestId } = props;
   return (
     <div
       data-testid={dataTestId}
       className={cx(innerClasses.root, classes.root)}
+      role="group"
+      aria-label="group-links"
     >
       <div className={cx(innerClasses.items, classes.items)}>
         {items.map(
-          item =>
+          (item) =>
             Boolean(item) && (
               <ItemComponent
                 key={item.title}

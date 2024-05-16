@@ -9,6 +9,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install
-        uses: npm ci
+        run: npm ci
       - name: Tests
-        uses: npm run test
+        run: npm run test

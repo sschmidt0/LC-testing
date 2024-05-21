@@ -15,6 +15,7 @@ export const RowComponent: React.FunctionComponent<Props> = (props) => {
       {...rest}
       className={cx(classes.root, className)}
       data-testid={props['data-testid']}
+      role="row"
     >
       {children}
     </TableRow>

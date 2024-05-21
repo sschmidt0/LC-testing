@@ -25,10 +25,18 @@ export const ProjectRowComponent: React.FunctionComponent<Props> = ({
       <CellComponent>{row.lastDateIncurred}</CellComponent>
       <CellComponent>
         {row.creationDate}
-        <IconButton onClick={() => onEdit(row.id)}>
+        <IconButton
+          onClick={() => onEdit(row.id)}
+          name="edit"
+          aria-label="edit"
+        >
           <EditIcon />
         </IconButton>
-        <IconButton onClick={() => onDelete(row)}>
+        <IconButton
+          onClick={() => onDelete(row)}
+          name="delete"
+          aria-label="delete"
+        >
           <DeleteIcon />
         </IconButton>
       </CellComponent>

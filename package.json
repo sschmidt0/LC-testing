@@ -15,7 +15,8 @@
     "test:watch": "npm run test -- --watchAll -i",
     "test:coverage": "CI=true npm test -- --env=jsdom --coverage",
     "cypress:open": "cypress open",
-    "test:e2e": "cypress open",
+    "test:e2e": "npm start -- -r test:e2e:start",
+    "test:e2e:start": "cypress run",
     "clean": "rimraf dist"
   },
   "repository": {
